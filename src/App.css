@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  height: 100vh;
+}
+
+.passcodeContainer {
+  box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  width: 500px;
+  height: 600px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.passcodeDisplay {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  overflow-x: hidden;
+  background-color: #f9f8f8;
+  border-radius: 1rem;
+  color: #888;
+}
+
+.passcodeButtons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 80%;
+  gap: .5rem;
+}
+
+.passcodeButtons > *{
+  border-radius: .5rem;
+  border: none; 
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.numKey{
+  background-color: #7ac2cd;
+  cursor: pointer;
+}
+
+.numKey:hover{
+  background-color: #95d4dd;
+}
+
+.bottomKey{
+  background-color: #555a60;
+  cursor: pointer;
+}
+.bottomKey:hover{
+  background-color: #6e747b;
+}
+
+.midKey{
+  background-color: #eeb57b;
+  cursor: pointer;
+}
+.midKey:hover{
+  background-color: #efcfae;
+}
